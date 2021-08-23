@@ -1,0 +1,659 @@
+:root{
+    --body-color:#7f8c8d;
+    --project-blue:#4992ca;
+    --project-gray:#424242;
+}
+*{
+    font-family: Avenir-Next,Roboto,sans-serif;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    /* overflow: hidden; */
+    color:var(--body-color);
+    font-size:16px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+.list_items li{
+    display: inline-block;
+    margin: 0rem 1rem;
+}
+#edyst_logo{
+    width: 5rem;
+    margin-left: 1rem;
+}
+#tricolor{
+    width: 1rem;
+    margin-right:0.5rem ;
+}
+.nav_btn{
+    margin-right:1rem;
+    width: 6rem;
+    height: 1.5rem;
+    color: #fff;
+    background-color: coral;
+    border: none;
+    font-weight: 700;
+}
+
+/* HomePage CSS */
+.home_page{
+    background: url('HomePgae\ ICON.jpg');
+    background-size: cover;
+    padding: 2rem  25rem 2rem 5rem;
+    color: #fff;
+}
+.home_page h1{
+    font-size:90px;
+}
+.home_page h3{
+    font-size:33px;
+}
+#btn1{
+    width: 15rem;
+    border: none;
+    background-color: var(--project-blue);
+    color: #fff;
+}
+#btn2{
+    width: 15rem;
+    background:none;
+    border: 3px solid #fff;
+    color:#fff;
+}
+#btn3{
+    border-radius: 15px;
+}
+#btn3 span{
+    font-weight: 700;
+}
+.home_btn{
+    height:3rem;
+    display: block;
+    margin: 1.5rem;
+    font-size: 16px;
+}
+@media(max-width:787px){
+    .home_page h1{
+        font-size:40px;
+    }
+    .home_page h3{
+        font-size:25px;
+    }
+    #btn1{
+        width: fit-content;
+        height: fit-content;
+    }
+    #btn2{
+        width: fit-content;
+        height: fit-content;
+    }
+    #btn3{
+        height: fit-content;
+    }
+    .home_page{
+        padding: 2rem  5rem 2rem 1rem;
+    }
+}
+
+/* Pocket Monster CSS */
+.pocket_monster{
+    background-color: var(--project-blue);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 7rem;
+}
+.pocket_monster .types_container{
+    display: flex;
+}
+.types{
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+}
+.pocket_monster h2{
+    font-size: 45px;
+    margin: 0;
+}
+.types h4{
+    font-size:30px;
+    margin: 0;
+}
+.types i{
+    font-size:40px;
+}
+.types p{
+    line-height: 2rem;
+}
+@media(max-width:1356px){
+    .pocket_monster .types_container{
+        display: initial;
+    }
+    .types p{
+        margin-bottom: 0;
+    }
+}
+@media(max-width:500px){
+    .pocket_monster{
+        padding: 3%;
+    }
+    .pocket_monster h2{
+        font-size: 35px;
+    }
+}
+/* Stats CSS */
+.stats{
+    color: initial;
+    text-align: center;
+    padding-bottom:1.5rem ;
+    display: grid;
+    grid-template-areas: 
+    "heading heading"
+    "a1 a2";
+}
+.stats h2{
+    font-size:45px;
+    margin-bottom:0;
+    grid-area: heading;
+}
+#weight{
+    grid-area: a1;
+    margin-left: 8rem;
+}
+#download{
+    grid-area: a2;
+    margin-right: 8rem;
+}
+.stat_div h4{
+    font-size:30px;
+}
+.stat_div img{
+    width:30vw;
+}
+@media(max-width:854px){
+    .stats{
+        grid-template-areas: 
+        "heading"
+        "a1"
+        "a2";
+    }
+    .stat_div{
+        margin:0 !important;
+    }
+    .stat_div img{
+        width:55vw;
+    }
+}
+
+/* Pokemon of the year CSS */
+.pokemon_of_the_year{
+    margin:0 15%;
+    text-align: center;
+}
+.pokemon_of_the_year img{
+    width:10vw;
+}
+.pokemon_of_the_year h4{
+    color:initial;
+    font-size: 30px;
+}
+.pokemon_of_the_year h6{
+    font-size: 1.5rem;
+    margin:0;
+}
+.pokemon_of_the_year .outer_div{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.pokemon_of_the_year .inner_div{
+    text-align: center;
+}
+@media(max-width:935px){
+    .pokemon_of_the_year img{
+        width:20vw;
+        height: 20vw;
+    }
+}
+@media(max-width:450px){
+    .pokemon_of_the_year .outer_div{
+        display: initial;
+    }
+    .pokemon_of_the_year img{
+        width:70vw;
+        height: 70vw;
+    }
+}
+
+
+/* Q and A CSS */
+.q_and_a{
+    padding: 1% 15% 3% 15%;
+    background-color: var(--project-blue);
+    color: #fff;
+}
+.q_and_a h2{
+    font-size: 42px;
+    text-align: center;
+}
+.q_and_a h4,.q_and_a h5{
+    font-size: 25px;
+}
+
+/* Battels CSS */
+.battles{
+    text-align: center;
+    padding: 4% 15%;
+}
+.battles h4,.battles h5,.battles h6{
+    color: initial;
+}
+.battles h5{
+    font-size: 18px;
+}
+.battles h4{
+    font-size: 45px;
+    margin: 0;
+}
+.flexed_div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left_div{
+    flex: 1;
+    margin: 0 0.5rem;
+}
+.right_div{
+    flex: 2;
+    margin:  0.5rem;
+}
+.left_div h6{
+    font-size: 18px;
+}
+.left_div p{
+    line-height: 1.7rem;
+}
+.right_div th{
+    color: initial;
+}
+.right_div td,.right_div th {
+  text-align: center;
+  padding:12px;
+}
+.right_div table{
+  border-collapse:collapse;
+  border:1px solid #dddddd;
+}
+.right_div td{
+  color:#8a8a8a;
+}
+.right_div table,.right_div tr,.right_div th,.right_div td
+{
+  border:1px solid #dddddd;
+}
+.right_div p{
+    color: initial;
+}
+.battles .book{
+    color: var(--project-blue);
+    font-size: 25px;
+}
+.battles button{
+    border: none;
+    background-color: var(--project-blue);
+    width: 25%;
+    height: 3rem;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+@media(max-width:422px){
+    table{
+        width:fit-content;
+    }
+    .battles{
+        padding: 0;
+    }
+}
+
+/* know more */
+.know_more{
+    text-align: center;
+    background-color: #424242;
+    color: #fff;
+    padding: 3% 0 6% 0;
+}
+.know_more h2{
+    font-size: 42px;
+    margin: none;
+}
+.know_more button{
+    border: 3px solid #fff;
+    outline: none;
+    width:18%;
+    height: 3rem;
+    background: none;
+    color: inherit;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* pokemon Card CSS */
+.card{
+    text-align: center;
+}
+.card h4{
+    font-size: 45px;
+}
+.container{
+    margin: 0 auto 3%;
+    width: 15vw;
+    border-top: 20px solid var(--project-blue);
+}
+.container img{
+    width: 10vw;
+}
+.container .upper{
+    background-color: #eee;
+    padding: 3%;
+    border:1px solid var(--body-color);
+}
+.container .lower{
+    border:1px solid var(--body-color);
+}
+@media(max-width:1000px){
+    .card h4{
+        font-size: 30px;
+    }
+    .container{
+        width:50vw;
+    }
+}
+
+/* Trainers CSS */
+.trainers{
+    padding:5% 15%;
+    text-align: center;
+    background-color: var(--project-blue);
+    color: #fff;
+}
+.trainers img{
+    width:10vw;
+}
+.trainers h4{
+    font-size: 30px;
+    margin: 0;
+}
+.trainers h6{
+    font-size: 1.5rem;
+    margin:0;
+}
+.trainers .outer_div{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.trainers .inner_div{
+    text-align: center;
+}
+@media(max-width:900px){
+    .trainers .outer_div{
+        flex-wrap: wrap;
+    }
+}
+
+/* Generation Cards */
+.generation_cards{
+    padding:3% 20%;
+    text-align: center;
+}
+.generation_cards h3{
+    font-size: 45px;
+}
+.generation_cards .flexed{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.flexed .outer{
+    flex: 1 1 40%;
+}
+.outer{
+    margin: 0 1% 2% 1%;
+    border-top: 20px solid var(--project-blue);
+    color: initial;
+}
+.outer .upper{
+    text-align: left;
+    border-top: 20px solid var(--project-blue);
+    background-color: #eee;
+    padding: 3%;
+    border:1px solid var(--body-color);
+}
+.upper h5{
+    font-size: 25px;
+}
+.outer .lower{
+    border:1px solid var(--body-color);
+    padding: 0 5%;
+    line-height: 1.7rem;
+    height: 60vh;
+}
+@media(max-width:1247px){
+    .outer .lower,.outer .upper{
+        height: fit-content;
+        width:60vw;
+    }
+    .generation_cards h3{
+        font-size: 35px;
+    }
+}
+
+/* Email CSS */
+.mail{
+    text-align: center;
+    background-color: #424242;
+    color: #fff;
+    padding: 3% 0 6% 0;
+}
+.mail h2{
+    font-size: 42px;
+    margin: none;
+}
+.mail input{
+    border: none;
+    height:3rem;
+    margin-right: 0.5%;
+    width:30%;
+}
+.mail button{
+    border: 3px solid #fff;
+    outline: none;
+    width:18%;
+    height: 3rem;
+    background: none;
+    color: inherit;
+    font-size: 17px;
+    font-weight: 700;
+}
+@media(max-width:450px){
+    .mail{
+        padding: 0;
+    }
+    .mail button{
+        width: fit-content;
+    }
+}
+
+/* Pokemon games CSS */
+.games{
+    text-align: center;
+    padding: 3% 20%;
+}
+.games h4{
+    font-size: 40px;
+}
+.games .game_flexed{
+    display: flex;
+    flex-wrap: wrap;
+}
+.games .game_flexed h6{
+    font-size: 16px;
+}
+.games .game_flexed img{
+    height: 200px;
+}
+.game_flexed{
+    color: initial;
+}
+.game_flexed div{
+    flex:1;
+}
+.games button{
+    color: #fff;
+    border:none;
+    margin-top: 3%;
+    background-color: var(--project-blue);
+    width: 20%;
+    height: 3rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media(max-width:510px){
+    .games .game_flexed img{
+        width: 70vw;
+    }
+    .games button{
+        width: fit-content;
+    }
+}
+
+/* Desginers CSS */
+.designers{
+    padding: 5% 15%;
+    background-color: var(--project-blue);
+    color: #fff;
+    text-align: center;
+}
+.designers h4{
+    font-size: 45px;
+    margin: 0;
+}
+.designers .designers_flexed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.designers_flexed img{
+    border-radius: 50%;
+    width: 12vw;
+    margin: 0;
+}
+.designers_flexed h5{
+    font-size: 23px;
+    margin: 0;
+}
+.designers_flexed div{
+    flex: 1;
+    margin: 1%;
+}
+@media(max-width:880px){
+    .designers h4{
+        font-size: 35px;
+    }
+}
+
+/* logos CSS */
+.logos{
+    padding: 0 20%;
+    text-align: center;
+}
+.logos h4{
+    font-size: 45px;
+}
+.logos .flexed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flexed img{
+    width: 228px;
+    margin: 2% 3%;
+}
+.logos p{
+    color: initial;
+}
+@media(max-width:380px){
+    .flexed img{
+        width: 80vw;
+        margin: 2% auto;
+    }
+    .logos{
+        padding: 0;}
+}
+
+/* know more 2 */
+.know_more2{
+    text-align: center;
+    background-color: var(--project-blue);
+    color: #fff;
+    padding: 3% 0 6% 0;
+}
+.know_more2 h2{
+    font-size: 42px;
+    margin: none;
+}
+.know_more2 button{
+    border: 3px solid #fff;
+    outline: none;
+    width:18%;
+    height: 3rem;
+    background: none;
+    color: inherit;
+    font-size: 17px;
+    font-weight: 700;
+}
+@media(max-width:320px){
+    .know_more2 button{
+        width: fit-content;
+    }
+}
+
+/* footer CSS */
+footer{
+    background-color: rgb(10, 20, 17);
+    text-align: center;
+}
+footer .footer_flexed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer_flexed ul{
+    list-style: none;
+}
+.footer_flexed li{
+    color: #fff;
+    margin:1rem;
+    font-size: 13px;
+}
+.footer_flexed li i{
+    margin: 1rem;
+}
+
+
+/* Getting Rubik's Criteria done */
+.home_page .overlay{
+    background:#000000b3;
+}
+.home_page #btn2,.know_more button,.mail button{
+    border-radius:2px !important;
+    border-style: solid !important;
+    border-color:#fff !important;
+}
